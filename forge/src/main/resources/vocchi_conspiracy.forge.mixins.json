@@ -5,7 +5,7 @@
   "compatibilityLevel": "JAVA_18",
   "mixins": [],
   "client": [
-    "MixinTitleScreen"
+    "com.voc2048.vocchi_conspiracy.mixin.MixinTitleScreen"
   ],
   "server": [],
   "injectors": {

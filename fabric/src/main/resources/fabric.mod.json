@@ -16,7 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.voc2048.vocchi_conspiracy"
+      "com.voc2048.vocchi_conspiracy.vocchi_conspiracy"
     ]
   },
   "mixins": [

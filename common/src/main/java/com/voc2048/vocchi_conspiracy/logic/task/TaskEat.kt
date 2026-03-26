@@ -15,5 +15,6 @@ val TASK_EAT = GameTask(
     taskImpl = {
     },
     penaltyImpl = {
+
     },
 )

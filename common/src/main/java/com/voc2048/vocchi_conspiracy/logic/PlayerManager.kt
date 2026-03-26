@@ -6,10 +6,6 @@ import java.util.UUID
 data class PlayerData(
     val uuid: UUID,
     val role: GameRole,
-    val gameData: GameVaraibles,
-)
-
-data class GameVaraibles(
     var isAlive: Boolean = true,
     var isSpectator: Boolean = false,
     var hasWrongKilled: Boolean = false,
@@ -21,8 +17,8 @@ data class GameVaraibles(
 class PlayerManager {
     private val playerDataMap = mutableMapOf<UUID, PlayerData>()
 
-    fun addPlayer(uuid: UUID, role: GameRole) {
-        playerDataMap[uuid] = PlayerData(uuid, role, GameVaraibles())
+    fun addPlayer(uuid: UUID, role: GameRole, isSpectator: Boolean) {
+        playerDataMap[uuid] = PlayerData(uuid, role, isAlive = true, isSpectator = false, hasWrongKilled = false, coins = 0, sanValue = 100, maxSanValue = 100)
     }
 
     fun getPlayerData(uuid: UUID): PlayerData? {
